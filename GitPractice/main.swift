@@ -1,11 +1,12 @@
-//
-//  main.swift
-//  GitPractice
-//
-//  Created by Sergey Kotov on 03.12.2021.
-//
-
 import Foundation
 
-print("Hello, World!")
+func my_pow(_ number: Double, degree: UInt) -> Double {
+    var result = number
+    for _ in 1..<degree {
+        result *= number
+    }
+    
+    return result
+}
 
+print(my_pow(3, degree: 2))
